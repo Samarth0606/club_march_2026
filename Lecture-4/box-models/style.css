@@ -1,0 +1,13 @@
+div, h1, span, strong{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+
+    border: 5px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+span, strong{
+    /* display: block; */
+    display: inline-block;
+}
