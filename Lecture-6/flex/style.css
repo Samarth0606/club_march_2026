@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cell{
+    background-color: chocolate;
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+
+    /* display: inline-block; /* child property */
+}
+
+/* parent property */
+.container{
+    border: 1px solid purple;
+    height: 95vh;
+
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+
+    justify-content: flex-end;
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+
+    /* align-items: center; */
+
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+
+    align-content: center;
+    align-content: flex-start;
+    align-content: flex-end;
+
+    /* row-gap: 20px;
+    column-gap: 20px; */
+    gap: 20px;
+}
