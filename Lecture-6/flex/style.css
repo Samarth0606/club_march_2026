@@ -33,13 +33,27 @@
     /* align-items: center; */
 
     /* flex-wrap: nowrap; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
-    align-content: center;
+    /* align-content: center;
     align-content: flex-start;
-    align-content: flex-end;
+    align-content: flex-end; */
 
     /* row-gap: 20px;
     column-gap: 20px; */
-    gap: 20px;
+    /* gap: 20px; */
+}
+
+
+#cell2{
+    background-color: purple;
+    flex-grow: 1;
+    flex-shrink: 3;
+    align-self: center;
+}
+#cell3{
+    background-color: red;
+    flex-grow: 2;
+    flex-shrink: 2;
+    align-self: flex-end;
 }
