@@ -1,0 +1,35 @@
+div{
+    width: 600px;
+    border: 2px solid red;
+    padding: 10px;
+    /* margin: 0 auto; */
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    font-family: cursive;
+    color: green;
+    font-weight: 700;
+}
+
+/* @media screen and (min-width:650px) { */
+@media screen and (max-width:650px) {
+    div{
+        width: 90vw;
+    }
+    h1{
+        font-size: 50px;
+        color: brown;
+    }
+}
+
