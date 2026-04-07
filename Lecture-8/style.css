@@ -94,3 +94,50 @@ nav{
 }
 
 /* ---------------------------- Navbar ends here ------------------------------ */
+/* nav bottom */
+.nav-bottom{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #232f3e;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.nav-bottom div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+/* ---------------------------- */
+/* main slider */
+.main-slider ul{
+    display: flex;
+    overflow-y: hidden;
+}
+
+.slider-img{
+    max-width: 100%;
+}
+
+.main-slider a{
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    padding: 5vh 1vw;
+    background-color: #ffffff4f;
+    font-weight: 600;
+    font-size: 50px;
+    cursor: pointer;
+    color: #0000007b;
+}
+
+.control-next{
+    right: 0;
+}
+
+/* ---------------------------- */
+
