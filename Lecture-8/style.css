@@ -140,4 +140,63 @@ nav{
 }
 
 /* ---------------------------- */
+/* 4 boxes */
+.box-row{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.box-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    max-width: 24%;
+    z-index: 1;
+    min-height: 200px;
+    padding: 10px 20px;
+}
 
+.box-col a{
+    font-weight: 600;
+    color: #009999;
+    font-size: 13px;
+}
+
+.slider-box{
+    margin-top: -20vw;
+}
+
+/* ---------------------------- */
+/* product slider */
+
+.products-slider{
+    background-color: #fff;
+    margin: 15px 30px;
+    padding: 20px;
+}
+.products-slider .products img{
+    max-width: 200px;
+    max-height: 200;
+}
+
+.products-slider .products{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* ---------------------------- */
+/* footer */
+footer{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #131921;
+    padding: 20px 60px;
+    justify-content: space-between;
+}
