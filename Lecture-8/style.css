@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background-color: #dadada;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131921;
+    padding: 10px 20px;
+    color: #fff;
+}
+/* ---------------------------------- */
+/* location */
+.nav-location{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-left: 15px;
+    color: #c4c4c4;
+}
+.nav-location h1{
+    color: #fff;
+    font-size: 14px;
+}
+/* ---------------------------------- */
+/* search bar */
+.nav-search{
+    display: flex;
+    flex:  1;
+    background-color: #fff;
+    align-items: center;
+    max-width: 1000px;
+    border-radius: 4px;
+    margin-left: 5px;
+    color: grey;
+}
+.nav-search-category{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 5px;
+    background-color: #e5e5e5;
+    border-radius: 4px 0 0 4px;
+}
+.nav-search-input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 20px;
+}
+.nav-search-icon{
+    max-width: 41px;
+    pad: 8px;
+    background-color: #ffd64f;
+    border-radius: 0 4px 4px 0;
+}
+.nav-language{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+/* ---------------------------------- */
+/* order  & singin */
+.nav-text{
+    margin-left: 15px;
+}
+.nav-text p{
+    font-size: 10px;
+}
+
+.nav-text h1{
+    font-size: 14px;
+}
+/* ---------------------------------- */
+/* nav cart */
+.nav-cart{
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+/* ---------------------------- Navbar ends here ------------------------------ */
