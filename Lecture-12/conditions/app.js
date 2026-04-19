@@ -83,5 +83,9 @@
 // }
 
 
+// attendance >= 75 pass else fail
+
+
+
 
 
