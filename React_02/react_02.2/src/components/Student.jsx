@@ -1,0 +1,8 @@
+
+function Student() {
+  return (
+    <div>Student</div>
+  )
+}
+
+export default Student
