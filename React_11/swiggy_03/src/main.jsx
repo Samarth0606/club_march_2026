@@ -7,6 +7,7 @@ import Signup from './components/Signup.jsx'
 import Offer from './components/Offer.jsx'
 import Body from './components/Body.jsx'
 import RestaurantDetails from './components/RestaurantDetails.jsx'
+import Cart from './components/Cart.jsx'
 
 
 const appRouter = createBrowserRouter([
@@ -29,6 +30,10 @@ const appRouter = createBrowserRouter([
       {
         path: '/signup',
         element: <Signup />
+      },
+      {
+        path: '/cart',
+        element: <Cart />
       },
       {
         path: '/restaurants/:id',

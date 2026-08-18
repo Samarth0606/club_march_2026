@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 export const cartSlice = createSlice({
-  name: 'counter',
+  name: 'cart',
   initialState:{
     items:[]
   },
   reducers: {
     addItem: (state,action) => {
-      state.items.push();
+      state.items.push(action.payload);
     },
     removeItem: (state) => {
       state.items.pop();

@@ -5,8 +5,10 @@ import { BiSolidOffer } from "react-icons/bi";
 import { IoIosHelpBuoy } from "react-icons/io";
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function Header() {
+    const cartItems = useSelector((store)=>store.cart.items)
   return (
     <div className='dark:bg-gray-900 text-white'>
         <nav className='flex justify-between items-center px-12 h-20'>
@@ -30,7 +32,7 @@ function Header() {
                 </div>
                 <div className='flex mx-4'>
                     <span className='mt-1'> <FiShoppingCart /> </span>
-                    <li className='px-2'>CART</li>
+                    <Link to='/cart'> <li className='px-2'>CART - {cartItems.length}</li> </Link>
                 </div>
             </ul>
         </nav>
