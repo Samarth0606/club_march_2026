@@ -5,10 +5,11 @@ const {
   updateRestaurant,
   deleteRestaurant
 } = require("../controller/restuarant.controller");
+const verifyToken = require("../middleware/verify");
 
 function restaurantRoutes(app){
     // Create restaurant
-    app.post("/api/restaurant", createRestaurant);
+    app.post("/api/restaurant",verifyToken, createRestaurant);
     
     // Get all restaurants
     app.get("/api/restaurant", getRestaurants);

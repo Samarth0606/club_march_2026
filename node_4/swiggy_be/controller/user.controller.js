@@ -1,7 +1,7 @@
 
 const bcrypt = require("bcrypt"); // install
 const UserModel = require("../models/User.model");
-
+const jwt = require('jsonwebtoken');
 // POST /api/register
 const register = async (req, res) => {
   try {
@@ -71,7 +71,8 @@ const login = async (req, res) => {
         message: "Invalid email or password",
       });
     }
-
+// token
+    const token = jwt.sign({ id:user._id }, 'secret');
     return res.status(200).json({
       message: "Login successful",
       user: {
@@ -79,7 +80,7 @@ const login = async (req, res) => {
         name: user.name,
         email: user.email,
       },
-    //   token: token
+      token: token
     });
   } catch (error) {
     return res.status(500).json({
