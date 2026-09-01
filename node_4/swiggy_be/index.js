@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const restaurantRoutes = require("./routes/restaurant.routes.js");
+const userRoutes = require("./routes/user.routes.js");
 const app = express();
 
 //Mongoose
@@ -14,6 +15,7 @@ app.use(express.json());
 
 // Routes
 restaurantRoutes(app)
+userRoutes(app)
 
 // Health check
 app.get("/", (req, res) => {
